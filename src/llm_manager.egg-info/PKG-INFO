@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: llm-manager
+Version: 0.1.0
+Summary: A unified interface for managing LLMs like Google Generative AI, Hugging Face and OpenAI.
+Home-page: https://github.com/ozMaatuk/llm_manager
+Author: OzLevi
+Author-email: ozmaatuk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# LLM Utils Library
+
+This library provides a unified interface for interacting with language models (LLMs) such as Google Generative AI, Hugging Face models, and OpenAI GPT models. It includes dynamic backend selection and easy-to-use methods for generating text.
+
+## Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Features
+- Unified interface for LLMs (`LLM` base class).
+- Dynamic backend selection using `LLMManager`.
+- Implementations for Google Generative AI (`GoogleLLM`), Hugging Face (`HuggingfaceLLM`), and OpenAI (`OpenAILLM`).
+
+## Usage
+
+### Environment Variables
+
+Set the following environment variables before running:
+- `GOOGLE_API_KEY`: API key for Google Generative AI.
+- `HF_TOKEN`: Authentication token for Hugging Face.
+- `OPENAI_API_KEY`: API key for OpenAI.
+
+### Example
+
+```python
+from llm_manager import LLMManager
+
+# Initialize the manager with a specific model
+llm = LLMManager(model_name="gpt-4")
+
+# Generate text
+prompt = "What is the capital of France?"
+generated_text = llm_manager.generate_text(prompt)
+print(f"Generated Text: {generated_text}")
+```
+
