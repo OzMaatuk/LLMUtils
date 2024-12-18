@@ -1,5 +1,5 @@
 package:
-  name: llm-manager
+  name: llm-utils
   version: "0.1.0"
 
 source:
@@ -23,11 +23,11 @@ requirements:
     - pydantic >=2.10.3
 
 about:
-  home: https://github.com/OzMaatuk/llm_manager
+  home: https://github.com/OzMaatuk/LLMUtils
   license: MIT
   summary: A unified interface for managing LLMs.
   description: A unified interface for managing LLMs like Google Generative AI, Hugging Face and OpenAI.
-  dev_url: https://github.com/OzMaatuk/llm_manager
+  dev_url: https://github.com/OzMaatuk/LLMUtils
 
 extra:
   recipe-maintainers:

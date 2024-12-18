@@ -11,12 +11,12 @@ pip install -r requirements.txt
 ```
 Or
 ```bash
-conda install --use-local llm-manager
+conda install --use-local llm-utils
 ```
 
 ## Features
 - Unified interface for LLMs (`LLM` base class).
-- Dynamic backend selection using `LLMManager`.
+- Dynamic backend selection using `LLMUtils`.
 - Implementations for Google Generative AI (`GoogleLLM`), Hugging Face (`HuggingfaceLLM`), and OpenAI (`OpenAILLM`).
 
 ## Usage
@@ -31,13 +31,13 @@ Set the following environment variables before running:
 ### Example
 
 ```python
-from llm_manager import LLMManager
+from llm_utils import LLMUtils
 
 # Initialize the manager with a specific model
-llm = LLMManager(model_name="gpt-4")
+llm = LLMUtils(model_name="gpt-4")
 
 # Generate text
 prompt = "What is the capital of France?"
-generated_text = llm_manager.generate_text(prompt)
+generated_text = llm_utils.generate_text(prompt)
 print(f"Generated Text: {generated_text}")
 ```

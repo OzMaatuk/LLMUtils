@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="llm_manager",
+    name="llm_utils",
     version="0.1.0",
     description="A unified interface for managing LLMs like Google Generative AI, Hugging Face and OpenAI.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="OzLevi",
     author_email="ozmaatuk@gmail.com",
-    url="https://github.com/OzMaatuk/llm_manager",
+    url="https://github.com/OzMaatuk/LLMUtils",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[

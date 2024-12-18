@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from src.manager import LLMManager
+from src.manager import LLMUtils
 
 app = FastAPI()
 
@@ -22,9 +22,9 @@ async def generate_text(request: GenerateRequest):
         raise HTTPException(status_code=400, detail="Prompt is required")
 
     try:
-        # Initialize the LLMManager with the specified model
-        llm_manager = LLMManager(model_name)
-        generated_text = llm_manager.generate_text(prompt)
+        # Initialize the LLMUtils with the specified model
+        llm_utils = LLMUtils(model_name)
+        generated_text = llm_utils.generate_text(prompt)
         
         if generated_text:
             return {"generated_text": generated_text}

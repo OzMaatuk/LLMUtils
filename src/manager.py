@@ -5,7 +5,7 @@ from src.google import GoogleLLM
 from src.huggingface import HuggingfaceLLM
 from src.openai import OpenAILLM
 
-class LLMManager:
+class LLMUtils:
     """Manages interactions with Language Models (LLMs)."""
 
     def __init__(self, model_name: str = "gemini-1.5-flash"):

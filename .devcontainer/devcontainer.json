@@ -1,5 +1,5 @@
 {
-    "name": "LLMManager Dev Container",
+    "name": "LLMUtils Dev Container",
     "build": {
         "context": "..",
         "dockerfile": "../Dockerfile"

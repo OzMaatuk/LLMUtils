@@ -1,4 +1,4 @@
 .env
 dist
 __pycache__
-src\llm_manager.egg-info
+src\llm_utils.egg-info
